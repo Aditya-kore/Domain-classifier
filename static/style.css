@@ -1,0 +1,64 @@
+#main {
+    text-align: center;
+    color: white;
+    background-image: radial-gradient(circle at 50% 0,#0d2651,#000131 69%);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#main h1 {
+    margin-bottom: 20px;
+}
+#main h5 {
+    margin-top: 20px;
+}
+#submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#heading {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#info p {
+    font-size: larger;
+    padding-top: 55px;
+    margin-top: revert !important;
+}
+#info {
+    padding-bottom: 70px;
+}
+#faq h3 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 36px;
+}
+#dot {
+    font-size: 12px;
+    color: gold;
+    padding-right: 12px;
+}
+#text {
+    padding-left: 16px;
+    color: darkgray;
+    font-size: 17px;
+}
+#tech {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#tech h3{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 36px;
+}
+#footer {
+    background-color: gainsboro;
+    text-align: center;
+    font-size: larger;
+    color: darkslategray;
+}
+#footer p {
+    
+    margin-bottom: 0px !important;
+}

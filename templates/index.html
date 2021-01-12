@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Domain Classification</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">GID-2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#info">Info</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tech">Technology used<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <main id="main">
+            <form action="/predict" method="POST">
+              <div class="container">
+                <h1 class="col-8 mx-auto">Domain Classification: Identify the best category of a URL or web domain instantly</h1>
+                <input class="form-control validate" type="text" name="url" placeholder="Domain name">
+                  <button id="submit" class="btn btn-warning col-4" type="submit"> Search </button>
+                <div id="result"> </div>
+                <h5 class="col-5 mx-auto">Identify the categories a domain name falls under based on the content of the hosted website.</h5>
+              </div>
+            </form>
+          </main>
+          <section id="info" class="container">
+            <h3 id="heading"> What is a Domain Classification ? </h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <p>A website category lookup is a web service used to determine the categories of a domain name. Domains are classified using a combination of machine learning (ML) and human inspection. Our web crawlers collect and organize website content, which ML algorithms then examine and categorize. Human experts verify the results.</p>
+              </div>
+              <div class="col-sm-6">
+                <img class="col-sm-8" src="{{ url_for('static', filename='Images/1.jpg')}}">
+              </div>
+            </div>
+          </section>
+          <section id="faq" class="container">
+            <h3>Why Use Domain Classification Search ?</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <h6> <i id="dot" class="fa fa-circle"></i> Easy-to-Use Interface </h6>
+                <p id="text">Website Categorization Lookup doesn’t complicate things. Just type the domain name into the input box to retrieve up to three categories the website it hosts falls under</p>
+              </div>
+              <div class="col-sm-6">
+                <h6><i id="dot" class="fa fa-circle"></i> Precise and relevant result </h6>
+                <p id="text">ML, natural language processing (NLP), and human expertise allow you to extract categories for 150M+ websites. The solution supports over 25 categories.</p>
+              </div>
+            </div>
+          </section>
+          <section id="tech" class="container">
+            <h3>Technology used</h3>
+            <div class="row">
+              <div class="col-sm-3"> <img class="img-fluid" src="{{ url_for('static', filename='Images/2.png')}}"></div>
+              <div class="col-sm-3"> <img class="img-fluid" src="{{ url_for('static', filename='Images/3.png')}}" style="height: 220px;"> </div>
+              <div class="col-sm-3" style="margin-top: 37px;"> <img class="img-fluid" src="{{ url_for('static', filename='Images/4.jpg')}}"> </div>
+              <div class="col-sm-3" style="margin-top: 18px;"> <img class="img-fluid" src="{{ url_for('static', filename='Images/6.jpg')}}"> </div>
+            </div>
+          </section>
+          <div id="footer">
+            <footer class="container">
+              <p> Copyright &copy; Domain Classification </p> 
+            </footer>
+          </div>
+          <script src="script.js"></script>
+    </body>
+</html>
